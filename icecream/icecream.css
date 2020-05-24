@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellowgreen;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.icecream {
+    width: 200px;
+    height: 300px;
+    border-radius: 45% 45% 0 0;
+    overflow: hidden;
+}
+.colors {
+    width: 350px;
+    height: 350px;
+    transform: rotate(-30deg);
+    position: relative;
+    left: -100px;
+    background: rgb(246, 123, 1);
+    background: linear-gradient(0deg, rgba(246, 123, 1, 1) 0%, rgba(246, 123, 1, 1) 0%, rgba(1, 245, 241, 1) 25%, rgba(1, 245, 241, 1) 25%, rgba(235, 245, 1, 1) 50%, rgba(235, 245, 1, 1) 50%, rgba(1, 233, 46, 1) 75%, rgba(1, 233, 46, 1) 75%);
+    background-position-y: 0px;
+    animation-name: fountain;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.stick {
+    width: 50px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 0 0 30px 30px;
+}
+
+@keyframes fountain {
+ to {
+     background-position-y: 1050px;
+ }
+}
